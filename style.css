@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 #navbar{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     background-color: black !important;
 }
-
 .navbar-brand{
     font-size: 25px;
     font-weight: 800;
@@ -27,10 +24,10 @@
 #navbarSupportedContent button:hover{
     background-color: #fff;
 }
-/* NAVBAR  */
+/* NAVBAR END  */
 
 .home{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -61,4 +58,73 @@
     background-color: green;
     color: #fff;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width:812px) {
+.home h1 {
+    font-size: 65px;
+}
+
+.home p {
+    font-size: 12px;
+}
+.home {
+    height: 60vh;
+}
+.home .input-group {
+    width: 70%;
+}
+}    
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .home {
+        height: 45vh;
+    }
+}
+/* home END */
+
+.about{
+    background-color: #ea1d6f !important;
+}
+.about p{
+    text-align: justify;
+}
+/* about end  */
+
+#product{
+    background-color: #e5e5e5;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: #e5e5e5;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    background-color: #ea1d6f;
+    color: #fff;
+    transform: scale(0.9);
+}
+/* product end */
+#contact{
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+/* contact end  */
+#footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    padding: 5px 0;
 }
